@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/add_user/" method="post">
+    {% csrf_token %}
+    <label>firstname:</label>
+    <input type="text" name="fname" placeholder="enter the first name"><br>
+    <label>last name:</label>
+    <input type="text" name="lname" placeholder="enter the last name"><br>
+    <label>email:</label>
+    <input type="email" name="email" placeholder="enter the email"><br>
+    <label>username:</label>
+    <input type="text" name="uname" placeholder="enter the username"><br>
+    <label>password:</label>
+    <input type="password" name="paswd" placeholder="enter the password"><br>
+    <input type="submit" value="create account">
+
+
+
+</form>
+
+</body>
+</html>
